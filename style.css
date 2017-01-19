@@ -1,9 +1,28 @@
-h1  {
-  color: blue;
-
+.photo {
+  width: 250px;
+  height: 150px;
+  padding: 5px;
 }
-
-.embiggen {
-  font-weight: bold;
-  font-size: 35px;
+.logo {
+  background-color: black;
+}
+.menu {
+  text-transform: uppercase;
+}
+.rent {
+  background-color: black;
+  color: white
+}
+.footer {
+  background-color: black;
+  color: white;
+}
+#abc {
+  color: grey;
+}
+.button {
+  text-transform: uppercase;
+  color: white;
+  background-color: red;
+  border-radius: 50px;
 }
