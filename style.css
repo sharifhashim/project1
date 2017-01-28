@@ -1,28 +1,175 @@
-.photo {
-  width: 250px;
-  height: 150px;
-  padding: 5px;
+@font-face {
+  font-family: 'karla Bold';
+  src: url('fonts/karla.ttf');
 }
-.logo {
+.karla-bold { font-family: 'Karla Bold';}
+
+@font-face {
+  font-family: 'karla bold italic';
+  src: url('fonts/karla-bolditaltic.ttf');
+}
+.karla-bold-italic { font-family: 'karla-bold-italic';}
+
+@font-face {
+  font-family: 'karla italic';
+  src: url('fonts/karla-italic.ttf');
+}
+.karla-italic {font-family: 'karla-italic';}
+
+@font-face {
+  font-family: 'karla';
+  src: url('fonts/karla-regular.ttf');
+}
+.karla { font-family: 'karla';}
+
+@font-face {
+  font-family: 'pacifico';
+  src: url('fonts/pacifico.ttf');
+}
+.pacifico { font-family: 'pacifico';}
+
+body {
+  font-family: arial;
+  font-size: 16px;
+  line-height: 1.25em;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 3em;
+  font-family: 'pacifico';
+  color: #666;
+  margin: 1em auto;
+}
+
+header {
   background-color: black;
+  text-align: center;
+  padding-top: 10px;
 }
-.menu {
+
+header img {
+  max-width: 60%;
+}
+
+nav ul {
+  padding: 1em 0;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
+}
+
+nav ul li{
+  display: inline-block;
+  font-size: 1em;
+  font-weight: bold;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
   text-transform: uppercase;
 }
-.rent {
-  background-color: black;
-  color: white
+
+main {
+  margin: .5em;
 }
-.footer {
-  background-color: black;
+
+footer {
+  background: #222222;
   color: white;
+  text-align: center;
+  padding: 3em 2em;
 }
+
+p {
+  line-height: 2em;
+  margin-bottom: 2em;
+}
+a {
+  color: #e2574c;
+}
+
 #abc {
-  color: grey;
+  color: #999;
 }
-.button {
-  text-transform: uppercase;
+
+.banner {
+  background: linear-gradient(to top,
+    rgba (0, 0, 0, .35) 0%,
+    rgba (0, 0, 0, .25) 100%
+  );
+  background-image:
+    url('images/kayak-bkgd.jpg');
+  background-position: top center;
+  background-size: cover;
+  text-align: center;
+  padding: 4em, 0;
+}
+
+.site-title span {
+  display: block;
   color: white;
-  background-color: red;
-  border-radius: 50px;
+  text-align: center;
+  padding: .5em 0;
+}
+
+.enjoy-the {
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.great-outdoors, .from-the-water {
+  text-shadow: 2px 2px 5px #999;
+}
+
+.great-outdoors {
+  font-size: 3em;
+}
+
+.from-the-water {
+  font-size: 2.25em;
+}
+
+.banner p {
+  color: white;
+  background-color: rgba(0, 0, 0, .5);
+  margin: 1.5em auto;
+  margin-bottom: 3em;
+  padding: 1em;
+  width: 75%;
+}
+
+.promo-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.promo-images img {
+  width: 30%;
+  margin: .5em 0;
+  box-shadow: 1px 0px 5px 1px #666;
+}
+
+footer p {
+  margin-bottom: 1.5em;
+}
+
+footer nav ul {
+  justify-content: center;
+}
+
+footer ul li {
+  margin: .5em;
 }
